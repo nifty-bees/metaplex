@@ -495,7 +495,7 @@ export function Notifications() {
       content={content}
       trigger="click"
     >
-      <h1 className="title">M</h1>
+      <img src="https://static.wixstatic.com/media/a70148_09bcfa1baa184979ad01baa78a6c0df8~mv2.png/v1/fill/w_196,h_196,al_c,q_85,usm_0.66_1.00_0.01/a70148_09bcfa1baa184979ad01baa78a6c0df8~mv2.webp" alt="" className="bee-logo" />
     </Popover>
   );
 
