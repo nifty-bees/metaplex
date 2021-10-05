@@ -25,22 +25,22 @@ export default class MetaplexDocument extends Document {
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/favicon-32x32.png"
+            href="https://static.wixstatic.com/media/a70148_09bcfa1baa184979ad01baa78a6c0df8~mv2.png/v1/fill/w_196,h_196,al_c,q_85,usm_0.66_1.00_0.01/a70148_09bcfa1baa184979ad01baa78a6c0df8~mv2.webp"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="96x96"
-            href="/favicon-96x96.png"
+            href="https://static.wixstatic.com/media/a70148_09bcfa1baa184979ad01baa78a6c0df8~mv2.png/v1/fill/w_196,h_196,al_c,q_85,usm_0.66_1.00_0.01/a70148_09bcfa1baa184979ad01baa78a6c0df8~mv2.webp"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/favicon-16x16.png"
+            href="https://static.wixstatic.com/media/a70148_09bcfa1baa184979ad01baa78a6c0df8~mv2.png/v1/fill/w_196,h_196,al_c,q_85,usm_0.66_1.00_0.01/a70148_09bcfa1baa184979ad01baa78a6c0df8~mv2.webp"
           />
           <meta name="theme-color" content="#000000" />
-          <meta name="description" content="Metaplex NFT Marketplace" />
+          <meta name="description" content="NiftyBees | NFTs on Solana" />
           <link rel="manifest" href="/manifest.json" />
           <link
             rel="stylesheet"
@@ -49,7 +49,7 @@ export default class MetaplexDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body>
+        <body style={{backgroundColor: 'rgba(234,139,57, 1)'}}>
           <Main />
           <NextScript />
           <script

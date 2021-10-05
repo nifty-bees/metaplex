@@ -52,17 +52,10 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
         flexDirection: vertical ? 'column' : 'row',
       }}
     >
-      <Link to={`/`}>
-        <Button className="app-btn">Explore</Button>
+      <Link to={`/mint`}>
+        <Button className="app-btn">Lottery</Button>
       </Link>
-      <Link to={`/artworks`}>
-        <Button className="app-btn">
-          {connected ? 'My Items' : 'Artworks'}
-        </Button>
-      </Link>
-      <Link to={`/artists`}>
-        <Button className="app-btn">Creators</Button>
-      </Link>
+
     </div>
   );
 };
@@ -81,20 +74,8 @@ const MetaplexMenu = () => {
           overlay={
             <Menu>
               <Menu.Item>
-                <Link to={`/`}>
-                  <Button className="app-btn">Explore</Button>
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link to={`/artworks`}>
-                  <Button className="app-btn">
-                    {connected ? 'My Items' : 'Artworks'}
-                  </Button>
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link to={`/artists`}>
-                  <Button className="app-btn">Creators</Button>
+                <Link to={`/mint`}>
+                  <Button className="app-btn">Lottery</Button>
                 </Link>
               </Menu.Item>
             </Menu>
@@ -115,8 +96,6 @@ export const AppBar = () => {
     <>
       <div className="app-left app-bar-box">
         {window.location.hash !== '#/analytics' && <Notifications />}
-        <div className="divider" />
-        <MetaplexMenu />
       </div>
       {connected ? (
         <div className="app-right app-bar-box">
@@ -128,7 +107,7 @@ export const AppBar = () => {
           />
         </div>
       ) : (
-        <ConnectButton type="primary" allowWalletChange />
+        <ConnectButton allowWalletChange />
       )}
     </>
   );

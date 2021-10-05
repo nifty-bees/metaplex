@@ -1,7 +1,6 @@
 import React from 'react';
 import { Layout } from 'antd';
 
-import { LABELS } from '../../constants';
 import { AppBar } from '../AppBar';
 import useWindowDimensions from '../../utils/layout';
 
@@ -18,10 +17,10 @@ export const AppLayout = React.memo((props: any) => {
   return (
     <>
       <Layout
-        title={LABELS.APP_TITLE}
         style={{
           padding: paddingForLayout(width),
           maxWidth: 1000,
+         
         }}
       >
         <Header className="App-Bar">
